@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!container) return; // Check if container is null
     items.forEach((item) => {
       const cardItems = `
-        <div class="col-6 col-md-4 col-lg-3 col-xl-3" data-aos="zoom-in" data-aos-duration="800">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-3" >
           <div class="card" style="cursor: pointer;" data-title="${item.title}" data-video="${item.video || ''}">
             <img src="${item.img}" alt="" />
               <div class="content" data-title="${item.title}" data-video="${item.video || ''}">
