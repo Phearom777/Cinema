@@ -11,7 +11,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.7)
     ),
-    url(/assets/img/banner/about.jpg);
+    url(../img/banner/about.jpg);
 }
 .banner {
   width: 100%;
@@ -40,7 +40,7 @@
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(/assets/img/banner/about.jpg);
+    url(../img/banner/about.jpg);
   h2 {
     /* position: absolute; */
     color: white;
