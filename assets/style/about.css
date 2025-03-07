@@ -1,0 +1,134 @@
+#about-us {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/assets/img/banner/about.jpg);
+}
+.banner {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.content {
+  color: white;
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+.contact {
+  /* position: relative; */
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/assets/img/banner/about.jpg);
+  h2 {
+    /* position: absolute; */
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+  }
+}
+.row {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  background: rgb(55, 54, 54);
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 15px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.form-group {
+  margin: 20px;
+}
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  background: rgb(218, 96, 52);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover,
+.button:focus {
+  background: rgb(202, 77, 32);
+}
+.button-block {
+  display: block;
+  width: 100%;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 450px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .banner {
+    padding-top: 10px;
+    margin: auto;
+  }
+  .content {
+    font-size: 13px;
+  }
+  .gmap_canvas {
+    height: 350px;
+  }
+  h3 {
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  #about-us {
+    height: 75vh;
+  }
+  h1 {
+    padding-top: 200px;
+    padding-bottom: 20px;
+  }
+  .content {
+    margin-top: 0px;
+    font-size: 30px;
+  }
+}

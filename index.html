@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/home.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="icon"
+      href="assets/img/logo/Black and White Circle Business Logo (2).png"
+    />
+
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>PR CINEMA</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navebar -->
+    <nav id="nav" class="fixed-nav show">
+      <div
+        class="navbar"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+      >
+        <i class="bx bx-menu"></i>
+        <div class="logo"><a href="#">PR CINEMA</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="#" class="menu-link">HOME</a></li>
+            <li>
+              <a href="#" class="menu-link">MOVIE</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="action.html">Action & Adventure</a></li>
+                <li><a href="crime.html">Crime Movies</a></li>
+                <li><a href="horror.html">Horror</a></li>
+
+                <li><a href="scifi.html">Sci-Fi & Fantasy Movies</a></li>
+                <li><a href="romantic.html">Romantic Comedy Movies</a></li>
+                <li><a href="comedy.html">Comedy Movies</a></li>
+                <li><a href="animetion.html">Animation</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="menu-link">ABOUT US</a></li>
+            <li><a href="contact.html" class="menu-link">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="bx bx-search"></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner"></div>
+      <!-- <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+    <!-- modal -->
+    <div
+      id="movieModal"
+      class="modal fade"
+      tabindex="-1"
+      aria-labelledby="movieModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video-container"></div>
+            <p class="modal-message" style="display: none">Coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recently Release -->
+    <section class="container-fluid recently">
+      <div class="cards">
+        <h3>Recently Released</h3>
+        <div class="row" id="new"></div>
+      </div>
+    </section>
+    <!-- Top Rate -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Top Rate</h3>
+      </div>
+      <div class="scroll-container" id="rate"></div>
+    </section>
+    <!-- coming soon -->
+    <section class="container-fluid coming_soon">
+      <div class="content">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="title">
+              <div class="top-title">
+                <p>Coming soon</p>
+              </div>
+              <div class="botom-title">
+                <h3>Chainsawman</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Ligula quam enim
+                  ullamcorper pulvinar. Tincidunt felis etiam urna felis duis.
+                  Vitae ornare at tortor lectus.
+                </p>
+                <h5><span>Director: </span>Christopher Nolan</h5>
+                <button type="button" class="btn btn-light">
+                  <i class="bi bi-play-fill"></i> Watch Trailer
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8 col-xl-8">
+            <img src="assets/img/banner/coming_soon.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Adventure & Action -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Action & Adventure</h3>
+        <a href="action.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="action"></div>
+    </section>
+    <!-- Crime -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Crime</h3>
+        <a href="crime.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="crime"></div>
+    </section>
+    <!-- Horror -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Horror</h3>
+        <a href="horror.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="horror"></div>
+    </section>
+    <!-- Sci-Fi & Fantasy Movies -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Sci-Fi & Fantasy</h3>
+        <a href="scifi.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="scifi"></div>
+    </section>
+    <!-- Sci-Fi & Fantasy Movies -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Romantic</h3>
+        <a href="romantic.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="romantic"></div>
+    </section>
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Comedy</h3>
+        <a href="comedy.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="comedy"></div>
+    </section>
+    <!-- Animation -->
+    <section class="container-fluid scroll-card">
+      <div class="head">
+        <h3>Animation</h3>
+        <a href="animetion.html"
+          >See more <i class="bi bi-chevron-right align-middle"></i
+        ></a>
+      </div>
+      <div class="scroll-container" id="animation"></div>
+    </section>
+    <!-- footer -->
+
+    <footer class="text-white pt-4 mt-5 container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              src="assets/img/logo/Black and White Circle Business Logo (2).png"
+              alt="PR CINEMA Logo"
+              class="footer-logo"
+            />
+          </div>
+          <div class="col-md-3">
+            <h5>About</h5>
+            <p>
+              PR CINEMA is your go-to source for the latest movies and trailers.
+              Stay updated with our collection of top-rated, recently released,
+              and upcoming movies.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">Movies</a></li>
+              <li><a href="#" class="text-white">About Us</a></li>
+              <li><a href="#" class="text-white">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-start">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i> 123 Movie St, Film City
+              </li>
+              <li><i class="bi bi-telephone-fill"></i> +1 234 567 890</li>
+              <li><i class="bi bi-envelope-fill"></i> info@prcinema.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class=" text-center ">
+        <p>&copy; 2025 PR CINEMA. All rights reserved.</p>
+      </div> -->
+      </div>
+    </footer>
+    <div class="text-center copy w-100">
+      &copy; 2025 PR CINEMA. All rights reserved.
+    </div>
+  </body>
+</html>
+
+<!-- aos animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="assets/Js/script.js"></script>
+<script type="module" src="assets/Js/home.js"></script>
+<!-- bootstrap -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>

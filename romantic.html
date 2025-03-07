@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR CINEMA</title>
+    <link rel="icon" href=" assets/img/logo/Black and White Circle Business Logo (2).png" />
+    <link rel="stylesheet" href="assets/style/action.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: black;
+        color: rgb(207, 207, 207);
+      }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="fixed-nav show">
+        <div
+          class="navbar"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+        >
+          <i class="bx bx-menu"></i>
+          <div class="logo"><a href="index.html">PR CINEMA</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="links">
+              <li><a href="index.html"class="menu-link">HOME</a></li>
+              <li>
+                <a href="#" class="menu-link">MOVIE</a>
+                <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="action.html">Action & Adventure</a></li>
+                  <li><a href="crime.html">Crime Movies</a></li>
+                  <li><a href="horror.html">Horror</a></li>
+                  <li><a href="scifi.html">Sci-Fi & Fantasy Movies</a></li>
+                  <li><a href="#">Romantic Comedy Movies</a></li>
+                  <li><a href="comedy.html">Comedy Movies</a></li>
+                  <li><a href="animetion.html">Animation</a></li>
+
+                </ul>
+              </li>
+              <li><a href="about.html" class="menu-link">ABOUT US</a></li>
+              <li><a href="contact.html"class="menu-link">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </nav>
+       <!-- modal -->
+    <div id="movieModal" class="modal fade" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video-container"></div>
+            <p class="modal-message" style="display: none;">Coming soon.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+       <!-- SciFi -->
+       <section class="container-fluid recently">
+        <div class="cards">
+          <h3>Romantic</h3>
+          <div class="row" id="romantic"></div>
+        </div>
+      </section>
+      <footer class=" text-white pt-4 mt-5 container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="assets/img/logo/Black and White Circle Business Logo (1).png"
+                alt="PR CINEMA Logo"
+                class="footer-logo d-flex justify-content-center align-items-center align-middle w-auto"
+              />
+            </div>
+            <div class="col-md-3">
+              <h5>About</h5>
+              <p>
+                PR CINEMA is your go-to source for the latest movies and trailers.
+                Stay updated with our collection of top-rated, recently released,
+                and upcoming movies.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Movies</a></li>
+                <li><a href="#" class="text-white">About Us</a></li>
+                <li><a href="#" class="text-white">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i> 123 Movie St, Film City
+                </li>
+                <li><i class="bi bi-telephone-fill"></i> +1 234 567 890</li>
+                <li><i class="bi bi-envelope-fill"></i> info@prcinema.com</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class=" text-center ">
+          <p>&copy; 2025 PR CINEMA. All rights reserved.</p>
+        </div> -->
+        </div>
+      </footer>
+      <div class="text-center copy w-100">
+        &copy; 2025 PR CINEMA. All rights reserved.
+      </div>
+</body>
+</html>
+<script src="assets/Js/script.js"></script>
+<script type="module" src="assets/Js/movie.js"></script>
+
+<!-- bootstrap -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+<!-- aos animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
