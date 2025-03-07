@@ -118,9 +118,9 @@ nav .navbar .links li:hover .js-sub-menu {
 .navbar .links li .sub-menu .more-arrow {
   line-height: 40px;
 }
-.navbar .links li .htmlCss-more-sub-menu {
-  /* line-height: 40px; */
-}
+/* .navbar .links li .htmlCss-more-sub-menu {
+  line-height: 40px;
+} */
 .navbar .links li .sub-menu .more-sub-menu {
   position: absolute;
   top: 0;
@@ -198,9 +198,9 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 @media (max-width: 920px) {
-  nav {
-    /* position: relative; */
-  }
+  /* nav {
+    position: relative;
+  } */
   .navbar .bx-menu {
     display: block;
   }
@@ -296,9 +296,9 @@ nav .navbar .links li:hover .js-sub-menu {
   }
 }
 @media (max-width: 800px) {
-  nav {
-    /* position: relative; */
-  }
+  /* nav {
+    position: relative;
+  } */
   .navbar .bx-menu {
     display: block;
   }
